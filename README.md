@@ -37,7 +37,7 @@ The purpose of this task is to demonstrate:
 - Local storage data management
 - Basic logic implementation (borrow system & fine calculation)
 
-**Author**
+## Author
 
-Sehar Waseem
-Software Engineering Student
+ Sehar Waseem  
+ Software Engineering Student  
