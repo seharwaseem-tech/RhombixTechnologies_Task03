@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyBookShelf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <h1>📚 MyBookShelf</h1>
+    <input type="text" id="searchInput" placeholder="Search books...">
+    <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Non-Fiction">Non-Fiction</option>
+        <option value="Programming">Programming</option>
+        <option value="Science">Science</option>
+    </select>
+    <button id="addBookBtn">+ Add Book</button>
+</header>
+
+<!-- STATS -->
+<section class="stats">
+    <div class="stat-card">
+        <h2 id="totalBooks">0</h2>
+        <p>Total Books</p>
+    </div>
+    <div class="stat-card">
+        <h2 id="borrowedBooks">0</h2>
+        <p>Borrowed</p>
+    </div>
+    <div class="stat-card">
+        <h2 id="availableBooks">0</h2>
+        <p>Available</p>
+    </div>
+</section>
+
+<!-- BOOK CONTAINER -->
+<section class="book-container" id="bookContainer"></section>
+
+<!-- ADD BOOK MODAL -->
+<div class="modal" id="bookModal">
+    <div class="modal-content">
+        <h2>Add New Book</h2>
+        <input type="text" id="titleInput" placeholder="Book Title">
+        <input type="text" id="authorInput" placeholder="Author">
+        <select id="categoryInput">
+            <option value="Fiction">Fiction</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+            <option value="Programming">Programming</option>
+            <option value="Science">Science</option>
+        </select>
+        <input type="text" id="coverInput" placeholder="Cover Image URL">
+        <button id="saveBookBtn">Save Book</button>
+        <button id="closeModalBtn">Cancel</button>
+    </div>
+</div>
+
+<!-- HISTORY MODAL -->
+<div class="modal" id="historyModal">
+    <div class="modal-content">
+        <h2>Borrow History</h2>
+        <div id="historyList"></div>
+        <button id="closeHistoryBtn">Close</button>
+    </div>
+</div>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+</body>
+</html>
